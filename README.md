@@ -24,3 +24,5 @@ Dynamic Route: [id] in the file name makes it handle URLs like /product/1 and /p
 fetchProductData: A function that simulates fetching product details based on the id.
 ProductPage Component: Uses the params.id to get the product data and displays it.
 # nextrendering
+
+Since Github only deploys static websites, I use Vercel for deployment on this one with various rendering methods.
