@@ -6,8 +6,14 @@ Here I used the async function that generates the HTML content when building the
 
 The Profile Page uses Server-Side Rendering (SSR).
 Server-Side Rendering (SSR) means that the HTML is generated on the server for every request, so the content is always up-to-date for each user.
-Here I also use the async function but this one generates the HTML content each time the page is requested.
 user: A hardcoded string ('Margrét Jóhannsdóttir') representing user-specific data, which usually is fetched from a database or API.
+On this page I added some Typescript:
+Enums: enum defines the user roles (Admin, User, Guest).
+Interfaces:
+UserProfile: Defines the structure of user data with name, age, email, and role.
+ProfilePageProps: Defines the props for the ProfilePage component - user and isAdmin.
+Generics:
+getUserDetail<T>: A function that safely fetches a specific detail from the UserProfile object based on the provided key.
 
 The Dashboard Page uses Client-Side Rendering (CSR).
 Client-Side Rendering (CSR) means the data is fetched and rendered in the browser after the initial HTML is loaded.
